@@ -1,0 +1,174 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skills .skillContainer{
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-left: auto;
+
+}
+
+@media( min-width: 768px){
+  .skillContainer{
+    margin:  0 auto;
+  }
+}
+
+@media (min-width: 992px){
+  .skillContainer{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px){
+  .skillContainer{
+    max-width: 1140px;
+  }
+}
+
+@media(min-width: 1400px){
+  .skillContainer{
+    max-width: 1350px;
+  }
+}
+
+.skill_titleCenter{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color:crimson;
+}
+
+.skills{
+  padding: 65px 0 100px;
+  background-color: white;
+  position: relative;
+}
+
+.skills .skilss-items{
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skills-item{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+ .skill-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.skill-info p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #15295f;
+  opacity: 1;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation: showText 0.5s 1s linear forwards;
+
+}
+
+
+
+.progress-line {
+  margin-top: 7px;
+  height: 10px;
+  width: 100%;
+  background-color: #cdcdcd;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.progress-line span {
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 50px;
+  background-color: coral;
+  transition: width 1s ease-in-out; 
+}
+
+.progress-line span.animate {
+  width: 100%; 
+}
+
+
+
+@-webkit-keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate{
+  100%{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+
+
+@keyframes animate {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 100%; 
+  }
+}
+
+.softSkills{
+  margin-top: 30px;
+}
+
+h2{
+   color: brown;
+   margin-bottom: 10px;
+}
+
+ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+ul li {
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
+
+
+
+
